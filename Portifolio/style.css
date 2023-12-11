@@ -1,0 +1,103 @@
+/* Reset de estilos para garantir uma base consistente em diferentes navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global para o corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #ff69b4;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo para a navegação */
+nav {
+    background-color: #faabd4;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    color: #731954; /* Cor de destaque ao passar o mouse */
+}
+
+/* Estilo para as seções */
+section {
+    padding: 20px;
+    margin: 0 auto; /* Adiciona margem automática à esquerda e à direita para centralizar */
+    max-width: 800px; /* Define uma largura máxima para as seções, ajuste conforme necessário */
+}
+
+/* Estilo para os links dentro das seções */
+section a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Estilo para a seção de skills */
+section#skills {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilo para o título "Skills" */
+section#skills > h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+}
+
+/* Estilo para a div de hard skills */
+section#skills > div:nth-child(odd) {
+    flex: 1;
+    margin-right: 2%; /* Adiciona um espaçamento entre as duas seções */
+}
+
+/* Estilo para a div de soft skills */
+section#skills > div:nth-child(even) {
+    flex: 1;
+    margin-left:2%; /* Adiciona um espaçamento entre as duas seções */
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #ff69b4;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsividade - ajusta o tamanho da fonte em telas menores */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    section {
+        max-width: 100%; /* Define a largura máxima para 100% em telas menores */
+    }
+}
